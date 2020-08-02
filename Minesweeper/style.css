@@ -1,0 +1,39 @@
+.grid{
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 200px;
+    height: 500px;
+    width: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: silver;
+    border-style: solid
+}
+
+.grid div{
+    height: 40px;
+    width: 40px;
+    border-radius: 15%;
+    border-style: solid;
+    border-width: 2px;
+}
+.bombafterGameOver{
+    background-color: orange;
+}
+.checked{
+    background-color: green;
+}
+.number{
+    text-align: center;
+    vertical-align: middle;
+    font-size: large;
+    font-weight: bold;
+    /* text-color: blue; */
+}
+.bomb{
+    background-color: orange;
+}
+/* .bombsymbol{
+    content: "Hi";
+} */
+
