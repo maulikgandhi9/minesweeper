@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded',()=>{
     let flags=bombAmount
     let win=false
     let resetbutton=document.querySelector('#reset')
+    var messageDisplay = document.querySelector('#message')
+
     const bombsArray = Array(bombAmount).fill('bomb')
     const emptyArray = Array(width*width-bombAmount).fill('valid')
 
@@ -72,6 +74,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     resetbutton.addEventListener('click',function(e){
         resetpressed(gamesArray)
     })
+
 
     //Function to shuffle array
     function shuffle(array)
@@ -192,6 +195,7 @@ document.addEventListener('DOMContentLoaded',()=>{
                 square.classList.add('bombafterGameOver')
             }
         })
+        messageDisplay.textContent="Try Again!"
     }
 
     //adding flags
@@ -242,9 +246,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     function resetpressed(array)
     {
         window.location.reload()
-        
-        
-
     }
     createBoard()
 })
