@@ -241,44 +241,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     function resetpressed(array)
     {
-        // let temp=document.querySelector('.grid')
-        let i=0
-        array=shuffle(array)
-
-        for(let i=0;i<width*width;i++)
-        {
-            squares[i].classList.remove("bomb","valid","bombafterGameOver","checked","number")
-            
-            // squares[i].getAttribute("innerHTML"),remove()
-        }
-        // let abc=document.getElementById('id')
-        squares.forEach(square=>{
-           
-                square.innerHTML=''
-                // abc.remove()
-        })
-        for(let i=0;i<width*width;i++)
-        {
-            squares[i].setAttribute('id',i)
-            squares[i].classList.add(array[i])
-            // const square = document.createElement('div')
-            // square.setAttribute('id',i)
-
-            squares[i].addEventListener('click',function(e){
-                click()
-            })
-    
-            squares[i].oncontextmenu = function(e)
-            {
-                e.preventDefault()
-                addflag()
-            }
-        console.log(squares[i]+ " "+squares[i].getAttribute('id'))
-
-        }
-        isGameOver=false;
-        win=false;
-        
+        window.location.reload()
         
         
 
